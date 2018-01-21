@@ -13,6 +13,9 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  css: [
+    {src: '~assets/less/base.less', lang: 'less'}
+  ],
   /*
   ** Customize the progress bar color
   */
@@ -24,6 +27,7 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
+    vendor:['~/assets/js/lib-flexible.js'],
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({

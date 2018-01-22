@@ -1,11 +1,63 @@
-@rem: 1/75rem;
+ @import "./common.less";
 *{
-	margin: 0;
-	padding: 0;
-	border: 0 none;
-	outline: none;
-	box-sizing: border-box;
-	.num{
-		font-size: 32*@rem;
-	}
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 32*@rem;
 }
+ul,li{list-style: none;}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.cf{
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+.clearfix:after{
+    clear: both;
+    content: "";
+    display: block;
+    overflow: hidden;
+}
+.testover{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+.testover2{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.testover3{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+@font-face {
+  font-family: 'iconfont';  /* project id 550631 */
+  src: url('//at.alicdn.com/t/font_550631_zpxfkwquicrw9udi.eot');
+  src: url('//at.alicdn.com/t/font_550631_zpxfkwquicrw9udi.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_550631_zpxfkwquicrw9udi.woff') format('woff'),
+  url('//at.alicdn.com/t/font_550631_zpxfkwquicrw9udi.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_550631_zpxfkwquicrw9udi.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:32*@rem;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+

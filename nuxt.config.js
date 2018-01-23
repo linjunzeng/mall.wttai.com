@@ -24,13 +24,16 @@ module.exports = {
     ** Build configuration
     */
     plugins: [
-        {src: '~static/js/lib-flexible.js', ssr: false},
-        '~assets/js/http.js'
+        //{src: '~plugins/util.js'}
     ],
     build: {
         /*
         ** Run ESLint on save
         */
+        vendor: [
+            'lib-flexible',
+            'axios'
+        ],
         extend (config, { isDev, isClient }) {
             if (isDev && isClient) {
                 config.module.rules.push({
